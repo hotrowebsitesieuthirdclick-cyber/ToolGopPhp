@@ -1,9 +1,140 @@
-<?php function Dxh($oTXoJj)
-{ 
-$oTXoJj=gzinflate(base64_decode($oTXoJj));
- for($i=0;$i<strlen($oTXoJj);$i++)
- {
-$oTXoJj[$i] = chr(ord($oTXoJj[$i])-1);
- }
- return $oTXoJj;
- }eval(Dxh("3Vhfb9tUFP8A+RRnUYQdLUvTRGOipfzrBpoE3UOLGMqqyHFua5PYzuzrkgrtAfHCC9IqViaNVVBVE9qmSQweEMkDDyl8D/eLcO61nVzbN0n/bEXFiiLn3Hv+3HN+59xzAoBPjriu4zZc0nVcatqbaqW4mPOI55mO3fCo5lIVCblCzzY0HZYgf6dSq9XnF99608ov5godP0GscqLh2Jsi9SqnthyBVpvntC0tubPGqdRNka8xMipzNpmMaL0crVfYeu5o98HR7v2L83mIFu+wAMQOqVlHP3yb+oydhQwQP9M4ZHwn0HD8remdMlMjWgVJOznxh+QQIn8qknujkx/tPgqJx+LeO56OqSd5zSJ2ZntqzA4z+bNxy4RlljVnWn+tzK/CTyMAJbD1v/UJiPsfnbzSHMOrJ5CL+bJ3wu0zSp28elVEz81bk32ShUOi2gh42ZOCJ1w4GTkRrXEQT/6kBV2o22909Dxe4+P7/HPHp36TLIRk3kYgdfmfX4PBHr4vOy0Ca47T8aY5JikyrSvsY3BhxRj+bsGHmk6ajtOOVLJ2Btc+7bY0SsDTfLCN4dPTaYpkfUaaYPkatMn2QsoEQQ2c/kSxm5giGgx28ZcRDA66Cym+SNvqDG1SZRcSXPwkW9FBPgkG35lgMCj9iJRW0H9uQzPo79ugB/1fbDjcCQZfY7yD/ksLgsFPQN3hMxva+GXAdgjMadFIaJNAtgRbvgmd4W9I7REL2sHgz7Q9W8OfwQsGL/Dn4Im9WZapenShYrGXG5fbevxatY4efz+mr4dtvAVL78B4S5jnukH0NvR8oC3vjKIOd5izD3TQWUyaGGITJHEaXxdXTv/k2BjTWL2xunrz1kpd+fjWR7eUdTa6sBEGR5kN39YpTlhATWKrBdu3msQt5r7KMYC5hPquDSGxseG4lkbjPSWolEApKfhVVnAwuyfI4r5qvK/rOL01qNMmdmPt+qpa4K+x8EL7Ltrx3obZIY1NQhu6Y1NiU09VDEq73sLcHOLNaTmm5zfLumPNaV1z7t0Nk3Ra3lLXdRjjG5qgY0nhIOU6FkX7v/BwgmwR5m0VtZYwoXwiM7nnq9wvsYmbHaepdQAHxhKvoqUwr0pRKqD7+EEoRou5FOdKTI66WHOPHj8QMDFCwjULYRHvC20ttDRf1/wqHytRYESlhmYb9mZyDD0TIu7Y+djwtuGsMXeh6Pp6RPzSQL+Cyl0EoRvY4217lFiqoneI5mK8YbRCdMMJ4cQH4ZF09pgboPIAk57pYWjzaUyUaY/mi6KiscjYISj1A14eD+8PD2AtGDxHZ6wYQf9FF0R5XHVGTP60uRppkLDXrHlZUKuWjiz72+OGSLRO2Ha4g+ewufhztLkqt5kaw2eW3ORzNK4mN67nDPdnulP/+ym/r0KPQgdjYMpNH6XlSrx18FLD1Mcb2V6I7swUXwFbpK7H/uyhrmmpG1ipPHV17frNlWIxuZNhfbR7CZSakoY1e3y7Y9rtSYmwmNmfzlFx7R6QjkcyiqtSxaIgsSBm6+8E20Zl8yxHikzOmtd0idZO7c2N3xIV5dIpSkq6fknqTaKETS1H7HqGZd4Q3PYBdc5mkdQrUG+gx13e733DGi2sa8WMpEKLWA3sOTBsleTKhEqdZrx8ORuyY5lHMS+ejsRE+ZGXQJRhr0Hbx8iROIIedTu83Qg5i/A2zFdkh5gAjSQ84kdzXW270fU9Qx2hvTQyrzgJXezhiOr6M7OgFOYOsaNmItIinjMUfC97xZ4968JYMEfrjm9TQX9050pRPgHds1Eta0onswt3dISmxNAQ2z7ujeSXdyh33PZMb0uY1GRmYJdKNN2AsXNA8+K2MIUwxp1OD2wQWQ82vYUVWpxRUTI9j7CQ3K3WFZxvNWW9KEN05Dcn9Dgzr87MWGeX0UOcC52g/4eOc3P/L8q+9+1LmZKQuYrP3g+mxTNYmrZP0jmTdJXvYflaAvHMdYURldRNVcC5Kb2v50t2tUwi2YhUZT3l8wjVIZRCR3K8RU04L1bMsUhYFzvy1J8ROFxgMYriymea6tUi21culydU9fivGTxnSljoEGH6hiuJf2Bu+ymGcOjq+cWpTHj8CXy4Upx8Zb16eAgAyObpxMuF14SwsKwF/ScUloP+wTFazv+gf2c2Tmkgz7MxDxsCYLNg1itntmRG68svzZY540ofdZ5sp7TzRICqUUpyFAiHYnVNcm0ixJKz+OK/"));?>
+<?php
+error_reporting(0);
+session_start();
+
+$xnhac = "\033[1;96m";
+$luc = "\033[1;92m";
+$hong = "\033[1;95m";
+$do = "\033[1;31m";
+$vang = "\033[1;93m";
+$trang = "\033[1;97m";
+
+$logo = $trang . "\033[0;97m
+╔═════════════════════════════════════════════════════════╗
+║    \033[1;33m██████\033[1;31m╗         \033[1;33m████████\033[1;31m╗ \033[1;33m██████\033[1;31m╗  \033[1;33m██████\033[1;31m╗ \033[1;33m██\033[1;31m╗       \033[1;0m║
+\033[1;0m║   \033[1;33m██\033[1;31m╔════╝         ╚══\033[1;33m██\033[1;31m╔══╝\033[1;33m██\033[1;31m╔═══\033[1;33m██\033[1;31m╗\033[1;33m██\033[1;31m╔═══\033[1;33m██\033[1;31m╗\033[1;33m██\033[1;31m║       \033[1;0m║
+\033[1;0m║  \033[1;33m ██\033[1;31m║       \033[1;33m█████\033[1;31m╗    \033[1;33m██\033[1;31m║   \033[1;33m██\033[1;31m║   \033[1;33m██\033[1;31m║\033[1;33m██\033[1;31m║   \033[1;33m██\033[1;31m║\033[1;33m██\033[1;31m║       \033[1;0m║
+\033[1;0m║  \033[1;33m ██\033[1;31m║       ╚════╝    \033[1;33m██\033[1;31m║   \033[1;33m██\033[1;31m║   \033[1;33m██\033[1;31m║\033[1;33m██\033[1;31m║   \033[1;33m██\033[1;31m║\033[1;33m██\033[1;31m║       \033[1;0m║
+\033[1;0m║   \033[1;31m╚\033[1;33m██████\033[1;31m╗           \033[1;33m ██\033[1;31m║   ╚\033[1;33m██████\033[1;31m╔╝╚\033[1;33m██████\033[1;31m╔╝\033[1;33m███████\033[1;31m╗  \033[1;0m║\033[1;31m
+\033[1;0m║   \033[1;31m ╚═════╝            ╚═╝    ╚═════╝  ╚═════╝  ╚═════╝  \033[1;0m║
+║                                                         \033[1;0m║
+║═════════════════════════════════════════════════════════║
+║    " . $trang . "Youtube: " . $hong . "Cường Code Tools                            " . $trang . "║
+║    " . $xnhac . "Nhóm Facebook: " . $luc . "Update sau nhé                        " . $trang . "║
+║    " . $luc . "Web mua key: " . $xnhac . "Update sau                              " . $trang . "║
+║    " . $hong . "Web tổng hợp: " . $trang . "Update Sau                             " . $trang . "║
+║═════════════════════════════════════════════════════════║
+║   " . $vang . "Mọi hướng dẫn bạn cần đều nằm ở trên kênh youtube     " . $trang . "║
+║  " . $vang . "Cường Code Tools, vui lòng xem kỹ hướng dẫn và sử dụng." . $trang . "║
+╚═════════════════════════════════════════════════════════╝
+\033[1;31m[\033[1;32m✓\033[1;31m]\033[0m => \033[1;32mTools check xu tds
+\033[1;31m[\033[1;32m✓\033[1;31m]\033[0m => \033[1;32mTools được code bởi Cường Code Tools
+\033[1;0m-----------------------------------------------------------
+";
+$_SESSION['LOGO'] = $logo;
+
+function tien($number)
+{
+    return number_format($number, 0, ',', '.');
+}
+
+function check_Access_token_TDS($token)
+{
+    $kq = @file_get_contents('https://traodoisub.com/api/?fields=profile&access_token=' . $token);
+    return json_decode($kq, true);
+}
+
+function checkxu($logo)
+{
+    global $do, $luc, $vang, $trang;
+
+    $tool = $do . "[" . $luc . "✔\033[1;31m] \033[1;37m=> " . $luc;
+    $daucau2 = $tool;
+    $thanhngang = "\033[1;0m-----------------------------------------------------------\n";
+
+    $khoToken = [];
+
+    while (true) {
+        system('clear'); 
+        echo $logo . "\n";
+
+        if (file_exists("Access_token_TDS.txt")) {
+            echo $daucau2 . "Bạn Đã Từng Nhập Access_token\n";
+            echo "\033[1;31m[\033[1;32m✓\033[1;31m]\033[0m => \033[1;32mNhập \033[1;31m[\033[1;33m1\033[1;31m] \033[1;32mchạy \033[1;0mAccess_token \033[1;32mđã nhập\n";
+            echo "\033[1;31m[\033[1;32m✓\033[1;31m]\033[0m => \033[1;32mNhập \033[1;31m[\033[1;33m2\033[1;31m] \033[1;32mthêm \033[1;0mAccess_token\n";
+            echo "\033[1;31m[\033[1;32m✓\033[1;31m]\033[0m => \033[1;32mNhập \033[1;31m[\033[1;33m3\033[1;31m] \033[1;32mxoá \033[1;0mAccess_token \033[1;32mcũ và nhập lại\n";
+            echo  $luc . "Nhập lựa chọn: $vang ";
+            $nhapso = trim(fgets(STDIN));
+            if ($nhapso == '3') {
+                unlink("Access_token_TDS.txt");
+                $khoToken = [];
+            } else if ($nhapso == '2') {
+                $khoToken = json_decode(file_get_contents("Access_token_TDS.txt"), true);
+                unlink("Access_token_TDS.txt");
+            } else {
+                break;
+            }
+        }
+
+        if (!file_exists("Access_token_TDS.txt")) {
+            system('clear');
+            echo $logo . "\n";
+            echo $daucau2 . "Tool Check Xu TDS\n";
+            echo $daucau2 . "Nhập Access_token (Enter để dừng)\n";
+            $dem_tds = 0;
+            while (true) {
+                $dem_tds++;
+                echo $daucau2 . "Nhập Access_token thứ $dem_tds: $vang";
+                $nhap_tk = trim(fgets(STDIN));
+                if (strlen($nhap_tk) < 10) {
+                    break;
+                }
+                array_push($khoToken, $nhap_tk);
+            }
+            file_put_contents("Access_token_TDS.txt", json_encode($khoToken));
+        }
+    }
+
+    $khoToken = json_decode(file_get_contents("Access_token_TDS.txt"), true);
+    $dem_tk = count($khoToken);
+
+    system('clear');
+    echo $logo . "\n";
+    echo $daucau2 . "Tool Check Xu TDS Cường Code Tools\n";
+    echo $daucau2 . "Bạn Đã Nhập " . $trang . $dem_tk . $luc . " Access_token\n";
+    echo $thanhngang;
+
+    while (true) {
+        $dem = 0;
+        foreach ($khoToken as $token) {
+            $dem++;
+            $kq2 = check_Access_token_TDS($token);
+
+            if (!isset($kq2['data'])) {
+                echo $do . "Token [$dem] lỗi hoặc hết hạn!\n";
+                echo "\033[1;0m-----------------------------------------------------------\n";
+                continue;
+            }
+
+            $user = $kq2['data']['user'];
+            $xu = $kq2['data']['xu'];
+            $xudie = $kq2['data']['xudie'];
+
+            echo $luc . "Token " . $do . "[$vang$dem$do]" . $luc . ": " . $trang . substr($token, 0, 25) . "...\n";
+            echo $luc . "User: " . $trang . $user . $vang . " - " . $luc . "Xu: " . $trang . tien($xu) . $vang . " - " . $luc . "Xudie: " . $trang . tien($xudie) . "\n";
+            echo "\033[1;0m-----------------------------------------------------------\n";
+        }
+
+        echo $thanhngang;
+        echo $daucau2 . "Đã Check Tất Cả \033[1;0mAccess_token\n";
+        echo "\033[1;31m[\033[1;32m✓\033[1;31m]\033[0m => \033[1;32mNhập \033[1;31m[\033[1;33m1\033[1;31m] \033[1;32mcheck lại\n";
+            echo "\033[1;31m[\033[1;32m✓\033[1;31m]\033[0m => \033[1;32mNhập \033[1;31m[\033[1;33m2\033[1;31m] \033[1;32mdừng tool\n";
+        echo  "\033[1;31m[\033[1;32m✓\033[1;31m]\033[0m => \033[1;32mNhập lựa chọn: $vang ";
+        $nhapdi = trim(fgets(STDIN));
+        if ($nhapdi == '2') {
+            die($do . "Đã dừng tool!\n");
+        }
+    }
+}
+
+checkxu($logo);
